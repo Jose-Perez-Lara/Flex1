@@ -25,11 +25,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  text-align: center;
   background-image: url("imagen1-lu8QyVMzs-transformed.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  gap: 30px;
+  gap: 2vh;
   color: whitesmoke;
 }
 
@@ -40,11 +42,6 @@
 .header p {
   font-size: 30px;
   color: whitesmoke;
-}
-
-.temp {
-  background-color: black;
-  height: 100vh;
 }
 
 .btn {
@@ -73,7 +70,6 @@
 }
 
 .footer {
-  height: 21vh;
   background-image: url("imagen1-lu8QyVMzs-transformed.webp");
   background-size: cover;
   background-position: center;
@@ -82,7 +78,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 2vh;
   color: whitesmoke;
 }
 .footer h1 {
@@ -93,28 +89,30 @@
   display: flex;
   justify-content: space-evenly;
 
-  gap: 130px;
+  gap: 2vh;
 }
 
 .mainSections {
   color: var(--mainColor);
   width: 90%;
-  height: 33vh;
   display: flex;
   flex-direction: column;
-  gap: 2%;
+  padding: 2vh 0 2vh 0;
+  gap: 2vh;
   align-items: center;
   margin: auto;
 }
 
 .mainSectionsDarker {
+  text-align: center;
   color: var(--mainColor);
   background-color: #f2f2f2;
   width: 100%;
-  height: 33vh;
   display: flex;
   flex-direction: column;
-  gap: 2%;
+  justify-content: space-evenly;
+  padding: 2vh 0 2vh 0;
+  gap: 2vh;
   align-items: center;
   margin: auto;
 }
@@ -131,17 +129,7 @@
   text-align: center;
   width: 100%;
   max-width: 1200px;
-  height: 70%;
   margin: 0 auto;
-}
-
-@media (max-width: 780px) {
-  .images {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
 }
 
 .roundedImage {
@@ -151,7 +139,6 @@
   justify-content: center;
   align-items: center;
   width: 20%;
-  height: 100%;
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-image: url("imagen3.webp");
@@ -161,7 +148,6 @@
 
 .rectangle {
   margin-bottom: 20px;
-  height: 100%;
   width: 30%;
   aspect-ratio: 3/2;
   background-size: cover;
@@ -179,17 +165,17 @@
 }
 
 .expert {
-  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin:0 auto;
+  margin: 0 auto;
   max-width: 1200px;
   align-items: center;
   font-size: x-large;
   color: var(--secondaryColor);
 }
+
 .expertImage {
   display: flex;
   font-size: large;
@@ -197,7 +183,6 @@
   justify-content: center;
   align-items: center;
   width: 20%;
-  height: 100%;
   aspect-ratio: 1/1;
   border-radius: 50%;
   border: 4px solid rgba(128, 128, 128, 0.623);
@@ -206,8 +191,30 @@
 main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   gap: 2vh;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 780px) {
+  .images {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .header h1 {
+    font-size: xxx-large;
+  }
+  .header p {
+    font-size: x-large;
+  }
+  .roundedImage {
+    font-size: x-large;
+    width: 40%;
+  }
+  .rectangle {
+    width: 50%;
+  }
+  .expertImage {
+    width: 40%;
+  }
 }
